@@ -11,14 +11,14 @@ interface ProductListProps {
 
 const ProductList: NextPage<ProductListProps> = ( props ) => {
     const { products } = props
-    const [ products , setProducts ] = React.useState<User[]>([])
+    // const [ products , setProducts ] = React.useState<User[]>([])
 
-    React.useEffect( () => {
-        axios.get('http://localhost:3001/api/products')
-            .then( response => {
-                setProducts(response.data)
-            })
-    } , []);
+    // React.useEffect( () => {
+    //     axios.get('http://localhost:3001/api/products')
+    //         .then( response => {
+    //             setProducts(response.data)
+    //         })
+    // } , []);
 
     return (
         <ul>
